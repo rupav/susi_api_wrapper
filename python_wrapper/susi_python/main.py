@@ -11,12 +11,12 @@ location = {'latitude': None, 'longitude': None}
 
 
 def use_api_endpoint(url):
-    global api_endpoint
-    api_endpoint = url
+    global api_endpoint              # needed to modify gloabal variable 'api_endpoint' 
+    api_endpoint = url               # set gloabal variable 'api_endpoint' to parameter 'url'
 
 
 def update_location(latitude, longitude):
-    global location
+    global location                    # needed to modify gloabal variable (here : a dict) 'location'
     location['latitude'] = latitude
     location['longitude'] = longitude
 
